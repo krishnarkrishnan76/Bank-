@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ContactUs</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <style type = "text/css">
+  #main
+  {
+  	width: 100%;
+  	height:500;
+  	background-color: MintCream;
+  }
+  #contact
+  {
+  	float:left;
+  	width: 40%;
+  }
+  #office
+  {
+  	float:left;
+  	width: 20%;
+  	margin-left: 10px;
+  }
+
+  </style>
+
+  <script type="text/javascript">
+    function formEmpty()
+    {
+      var x = document.contact.mail.value;
+      if(x=="")
+      {
+        alert("MaidID cannot be left empty.");
+      }
+    }
+function linkColour1(x)
+{
+x.style.color = "Red";  
+  
+}
+
+function linkColour2(x)
+{
+x.style.color = "black";  
+  
+}
+
+  </script>
+</head>
+
+<body>
+<h1>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+    <li><a href="bank.html"><img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font></a></li>  
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li><a href="accounts.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Products</a></li>
+      <li><a href="services.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Services</a></li>
+      <li><a href="locateus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Locate Us</a></li>
+      <li><a href="contactus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)"
+      >Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+</h1>
+
+<div id = "main">
+<div id = "contact">
+<h2> &nbsp;&nbsp;&nbsp;Contact Us </h2><br>
+<form name = contact style="padding-left: 1cm" onsubmit="formEmpty()">
+<input type = "text" class = "username" placeholder="Name" style="width: 8cm" required /><br><font color="red">Mandatory Field</font><br>
+<input type = "email" name = "mail" placeholder = "MailID" style="width: 8cm"/><br><font color="red">Mandatory Field</font><br>
+<input type = "text" class = "subject" placeholder = "Subject" style="width: 8cm"/><br><br>
+
+<textarea name="message" type="text" id="input-message" placeholder="Message" style="width: 8cm;height: 3cm;"></textarea> <br><br>
+<input type = "submit" value = "Submit" class = "button" alt="" style="width: 8cm;"/><br><br><br>
+</form>
+</div>
+
+<div id = "office">
+<h2>Our Offices: </h2>
+<br>
+<h4><b> Bangalore Office </b></h4>
+39/40 , HPK Pvt Ltd, <br>
+Hosur Road, Electronic city<br>
+Bangalore, Karnataka<br>
+Pin: 560100.<br>
+<h4 ><a href="https://www.google.co.in/maps/place/HP+Electronic+City/@12.854455,77.6590963,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae6c991da5e251:0xa30acce0575261f9!8m2!3d12.854455!4d77.661285"><font style = "color:black"><U>Locate Us</U></a></h4>
+<br>
+<h4><b> Hyderabad Office </b></h4>
+HPK Pvt Ltd, <br>
+Castle Hills, Masab Tank<br>
+Hyderabad, Telangana<br>
+Pin: 500013.<br>
+<h4 ><a href="https://www.google.co.in/maps/place/Institute+for+Development+and+Research+in+Banking+Technology,+Castle+Hills,+Venkatadri+Colony,+Masab+Tank,+Hyderabad,+Telangana+500028/@17.3975678,78.4472705,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb971462f0761f:0x3cda5f256375884e!8m2!3d17.3975733!4d78.4494253"><font style = "color:black"><U>Locate Us</U></a></h4>
+</div>
+
+<div id = "phone" style ="float: right;width:30%;">
+<h2> Hotline Numbers <br><br></h2>
+<h3>1800-130-2030<br>
+1800-903-9032</h3>
+<br><br>
+<img src = "contact.jpg" alt ="header" style = "width:200px; heigth:5px;">
+
+</div>
+</div>
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer style ="text-align:center;display: block;background-color:LightBlue; padding: 20px">
+&copy; HPK Bank Pvt Ltd. All rights reserved
+</footer>
+</html>

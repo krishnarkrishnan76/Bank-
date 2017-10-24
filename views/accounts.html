@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Accounts and Deposits</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style type = "text/css">
+#plain
+{
+ padding-left: 0.4cm;
+ float:left;
+ width: 20% 
+}
+
+#text
+{
+ float:left; 
+ width:45%;
+ margin-left: 10px;
+ 
+}
+
+#pic
+{
+ float: right;
+ width:25%;
+ padding-right: 0.5cm;
+}
+</style>
+
+<script  = "JavaScript">
+
+  function formValidation() {
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var spl =/^[A-Za-z0-9\\@\\#\\$]+$/
+        if(username.match(spl) && password.length > 4 ){
+            
+            alert("Re-directing to Login Page")
+           
+        }
+        else{
+            alert("SPL Characters Found in Username or Password length should be minimum of 5 charcters")
+            
+        }
+
+    }
+
+
+function linkColour1(x)
+{
+x.style.color = "Red";  
+  
+}
+
+function linkColour2(x)
+{
+x.style.color = "black";  
+  
+}
+
+  </script>
+</head>
+
+<body>
+
+<h1>
+<!-- <img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font> -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+    <li><a href="bank.html"><img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font></a></li>  
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li><a href="accounts.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Products</a></li>
+    
+      <li><a href="services.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Services</a></li>
+      <li><a href="locateus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Locate Us</a></li>
+      <li><a href="contactus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+</h1>
+
+<div id="main" style="height:320">
+
+<div id ="plain" >
+<br>
+<font face = "HP Simplified" size ="4"> NetBanking Login </font> <br><br>
+<form name = "loginform"  onsubmit="formValidation()">
+<input type = "text" id = "username" placeholder="Username"/><br><br>
+<input type = "password" id = "password" placeholder = "Password"/><br><br>
+<input type = "submit" value = "Sign In" class = "button" alt=""/><br><br><br>
+</form>
+</div>
+
+<div id = "text" >
+<h3><b>HPK Bank Savings Accounts for everyone</b></h3>
+ <br>
+<p>HPK Bank has the right Savings Account for everyone! Choose from a wide array of savings accounts to find one that matches your needs.</p>
+ 
+<p>Your bank account is always at your fingertips with MobileBanking and NetBanking. With   ATMs, accessing cash has never been easier. And of course, you can always talk to a Phone Banker if you prefer.</p>
+ 
+<p>What's more, avail of great SmartBuy offers on your Debit Card. Get started by browsing through the comprehensive range of savings accounts – from a regular savings account to a premium option that provides substantial savings.</p>
+<br>
+<table style = "width:100%; background-color: MintCream;">
+
+<tr style="background-color: Black;color: White">
+            <td colspan = "2"><b><h4>Accounts and Deposits</h4></b></td>
+         </tr>
+<tr>
+<th>Savings Account</th>
+<th>Salary Account</th>
+</tr>
+<tr>
+<td>* Choose an account to suit your needs – from a basic banking account to a feature rich premium option<br>
+* Our accounts come with everything you require to make your day to day banking easy. Plus more.</td>
+<td> *Customised salary accounts to suit the needs of every corporate<br> *Expect benefits beyond the ordinary like our Free Insurance Cover</td>
+</tr>
+<br>
+<tr>
+<th>Current Account</th>
+<th>Rural Account</th>
+</tr>
+
+<tr>
+<td> *Cost effective banking solutions for your businesses to maximize your cash-flow<br>
+*Fast and efficient transactions to help you take advantage of every opportunity</td>
+
+<td>*Whether you want to save regular amounts every month or in lump sum, we have a solution for you<br>
+*Competitive interest rates and flexibility to do more with your money</td>
+</tr>
+
+</table>
+<h4><a href="contactus.html"><br>Talk to us to know more</a><h4>
+ </div>
+
+<div id="pic">
+<br><br>
+<img src = "car.jpg" alt = "logo" style = "width: 300px;height: 150px" >
+<br><br>
+<img src = "ad.png" alt = "logo1" style = "width: 300px;height: 400px" >
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer style ="text-align: center;display: block;background-color:LightBlue;padding: 20px;width:100%">
+&copy; HPK Bank Pvt Ltd. All rights reserved
+</footer>
+
+</html>

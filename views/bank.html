@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> HPK OnlineBanking </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+<style type = "text/css">
+
+
+.myImage
+{
+padding-left: 0.5cm
+}
+
+#main
+{
+height:320	
+}
+
+#login
+{
+padding-left: 0.4cm;
+float:left;
+width: 20%	
+}
+#video
+{
+float: right;
+width:47%;
+padding-right: 1cm;	
+}
+</style>
++
+
+
+
+
+<script type="text/JavaScript">
+
+	function formValidation() {
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var spl =/^[A-Za-z0-9\\@\\#\\$]+$/
+        if(username.match(spl) && password.length > 4 ){
+            
+            alert("Re-directing to Login Page")
+            
+        }
+        else{
+            alert("SPL Characters Found in Username or Password length should be minimum of 5 charcters")
+            
+        }
+
+    }
+
+    function linkColour1(x)
+    {
+    	x.style.color = "red";
+    	
+      //var lis=document.getElementsByClassName("first")
+      
+      // for(var i=0;i<lis.length;i++){
+      //   var li= lis[i];
+      //   li.addEventListener("mouseover",function(){
+      //     this.getElementsByTagName("a")[0].style.color="#FF0000";
+      //   });
+      //   li.addEventListener("mouseout",function(){
+      //     this.getElementsByTagName("a")[0].style.color="#000000";
+      //   });
+      // }
+    }
+   // window.onload=linkColour;
+function linkColour2(x)
+{
+x.style.color = "black";	
+  
+}
+</script>
+</head>
+
+<body>
+
+<h1>
+<!-- <img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font> -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li  ><a href="bank.html"><img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font></a></li>  
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    
+      <li class="first"><a href="accounts.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)" >Products</a></li>
+      <li class="first"><a href="services.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Services</a></li>
+      <li class="first"><a href="locateus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Locate Us</a></li>
+      <li class="first"><a href="contactus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+</h1>
+
+<div class="myImage">
+<img src = "header1.jpg" alt ="header" align="center" style = "width:1300px; heigth:5px;">
+</div>
+<br>
+<br>
+<div id="main">
+
+<div id ="login">
+<font face = "HP Simplified" size ="4"> NetBanking Login </font> <br><br>
+
+<form name = "loginform"  onsubmit="formValidation()" method="POST" action="/login">
+<input type = "text" class = "username" id="username"  name= "userForm" placeholder="Username"/><br><br>
+<input type = "password" class = "password" id = "password" name="passForm" placeholder = "Password"/><br><br>
+<input type = "submit" value = "Sign In" class = "button" alt="" /><br><br><br>
+</form>
+
+</div>
+<div style = "float:left; width:30%;margin-left: 10px;">
+<marquee><b> WELCOME TO HPK! YOUR PERFECT BANKING PARTNER! TO REACH OUT TO US <u><a href=contactus.html>CLICK HERE</u></b></marquee>
+HPK Bank offers you a comprehensive range of transactions across multiple products through its NetBanking channel.
+ <br>
+So just log in to NetBanking and conduct 200+ transactions from the comfort of your home or office.<br>
+<p>You can check your Account Balance, book Fixed and Recurring Deposits, Download A/c Statement up to 5 years, pay your Bills, Recharge your Mobile/ DTH connection, and much more in a secure environment.</p>
+You can log in to NetBanking using your Customer ID/User ID and IPIN (NetBanking Password).
+</div>
+<div id="video">
+
+<object width="600" height="300"> <param name="movie" value="http://www.youtube.com/embed/w5qSjaTVXQE?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3"/ ></object>
+</div>
+</div>
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer style ="text-align: center;display: block;background-color:LightBlue; padding: 20px;width: 100%">
+&copy; HPK Bank Pvt Ltd. All rights reserved
+</footer>
+
+</html>

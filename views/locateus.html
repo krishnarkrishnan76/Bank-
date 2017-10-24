@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Locate Us</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+  function linkColour1(x)
+{
+x.style.color = "Red";  
+  
+}
+
+function linkColour2(x)
+{
+x.style.color = "black";  
+  
+}
+</script>
+</head>
+
+<body>
+
+<h1>
+<!-- <img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font> -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+   <li><a href="bank.html"><img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font></a></li>  
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li><a href="accounts.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Products</a></li>
+      <li><a href="services.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Services</a></li>
+      <li><a href="locateus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Locate Us</a></li>
+      <li><a href="contactus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+</h1>
+
+<div class="myImage " style ="height: 5%"  >
+<center><img src = "locate.jpg" alt ="header" align="center" style = "width:60%;"></center>
+</div>
+<center><h2>&nbsp;&nbsp;Branch and ATM Locations.</h2>
+<br>
+Need to find a specific branch in a specific city?Looking for a branch with lockers close to you? <br>Need the IFSC code for a branch to make an online payment?<br>All this and much more is available here - everything to do with our branch locations and ATMs. <br>Just use the drop down boxes to find the answers to your questions.
+
+<form>
+<br>
+<input type = "radio" id = "username" value="Branch"/> 
+<label for ="username">Branch</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type = "radio" id= "ATM" value="ATM"/> 
+<label for ="ATM">ATM</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type = "radio" id= "CDM" value="CDM"/> 
+<label for ="CDM">CDM</label>
+<br><br>
+<label>Select State</label>
+<select name="State">
+	<option value="Kerala">Kerala</option>
+	<option value="TamilNadu">Tamil Nadu</option>
+	<option value="Karnataka">Karnataka</option>
+	<option value="Telangana">Telangana</option>
+</select>
+
+<br><br>
+<label>Select City</label>
+<select name="City">
+	<option value="Kochi">Kochi</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Bangalore">Bangalore</option>
+	<option value="Hyderabad">Hyderabad</option>
+</select><br><br>
+<input type = "submit" value = "Submit" class = "button" alt=""/><br><br><br>
+</center>
+
+
+
+
+
+
+
+
+
+
+</body>
+<br><br><br><br>
+<footer style ="text-align: center;display: block;background-color:LightBlue; padding: 20px">
+&copy; HPK Bank Pvt Ltd. All rights reserved
+</footer>
+</html>

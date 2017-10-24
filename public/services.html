@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Forex </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style type = "text/css">
+#plain
+{
+ padding-left: 0.4cm;
+ float:left;
+ width: 20% ;
+}
+
+#text
+{
+ float:left; 
+ width:50%;
+ margin-left: 10px; 
+}
+
+
+</style>
+
+<script type="text/javascript">
+function formValidation()
+{ 
+  var username = document.login.username.value;
+  var password = document.login.password.value;
+
+  var special = /^[A-Za-z0-9//@//#//$]+$/;
+
+  if(username.match(special) && password.length>4)
+  {
+    alert("Re - Directing to Login Page")
+
+  }
+  else
+  {
+    alert("SPL characters not allowed in username OR Password is less than 5 characters")
+  }
+}
+
+function linkColour1(x)
+{
+x.style.color = "Red";  
+  
+}
+
+function linkColour2(x)
+{
+x.style.color = "black";  
+  
+}
+</script>
+</head>
+
+<body>
+
+<h1>
+<!-- <img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font> -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+    <li><a href="bank.html"><img src = "logo.png" alt = "logo" style = "width: 70px;height: 70px" > <font face = "Arial Black">HPK BANK </font></a></li>  
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li><a href="accounts.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Products</a></li>
+    
+      <li><a href="services.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Services</a></li>
+      <li><a href="locateus.html" onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Locate Us</a></li>
+      <li><a href="contactus.html"onmouseover="linkColour1(this)" onmouseout="linkColour2(this)">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+</h1>
+
+<div id="main" style="height:320">
+
+<div id ="plain">
+<br>
+<font face = "HP Simplified" size ="4"> NetBanking Login </font> <br><br>
+<form name = login onsubmit="formValidation()">
+<input type = "text" name = "username" placeholder="Username"/><br><br>
+<input type = "password" name = "password" placeholder = "Password"/><br><br>
+<input type = "submit" value = "Sign In" class = "button" alt=""/><br><br><br>
+</form>
+</div>
+
+<div id = "text" >
+
+<h3> Travel Solutions</h3>
+
+<p>No matter how you prefer to carry your foreign exchange when travelling, you can get it from us - from simple foreign currency notes to a multi-currency Forex Card.</p>
+
+<a href = contactus.html><img src = "apply.jpg" alt ="header" align="center" style = "width:20%;"></a>
+<br>
+<div id="main" style="height:200">
+<div id ="test" style = "float:left;width: 33%">
+<br>
+<h4 style="color:DarkBlue"> Why choose us for your Travel Needs?</h4>
+
+* We offer FOREX facilities through all HDK Branches.<br>
+* We offer services at competative rates and charges.
+</div>
+
+<div id = "stats" style = "float:left; width:33%;margin-left: 10px;">
+<br>
+<h4 style="color:DarkBlue"> HDK Bank's FOREX Travel Solutions</h4>
+*Foreign Currency Cash<br>
+*ForexPlus Card<br>
+*ForexPlus Chip Card<br>
+*ForexPlus Platinum Card<br>
+
+</div>
+
+<div id = "pqr" style = "float:right; width:30%;margin-left: 10px;">
+<br>
+<h4 style="color:DarkBlue"> Other FOREX Services Available</h4>
+*Cash to Master<br>
+
+
+</div>
+
+</div>
+
+</div><br>
+<div id="img" style ="float: right;width:25%;">
+
+<a href = locateus.html><img src = "branch.jpg" alt = "logo" style = "width: 250px;height: 130px" ></a><br><br><br>
+<a href = contactus.html><img src = "write.png" alt = "logo" style = "width: 250px;height: 100px" ></a><br>
+
+
+</div>
+
+
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer style ="text-align: center;display: block;background-color:LightBlue; padding: 20px;">
+&copy; HPK Bank Pvt Ltd. All rights reserved
+</footer>
+
+</html>
